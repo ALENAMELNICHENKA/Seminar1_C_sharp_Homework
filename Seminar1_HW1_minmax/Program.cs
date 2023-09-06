@@ -10,8 +10,7 @@ int num1 = int.Parse(Console.ReadLine());
 
 Console.Write("Введите второе число: ");
 int num2 = int.Parse(Console.ReadLine());
-int max;
-int min;
+
 if (num1 > num2)
 {
     Console.WriteLine($"max: {num1}, min: {num2}");

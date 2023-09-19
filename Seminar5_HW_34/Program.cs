@@ -35,7 +35,6 @@ int TestEvenNum(int[] array)
     {
         if (array[i] % 2 == 0)
             count++;
-
     }
     Console.WriteLine($"количество чётных чисел в массиве -> {count} ");
     return count;

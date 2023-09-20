@@ -28,21 +28,21 @@ void Print(int[] arr)
 }
 
 
-// Метод вывода суммы чисел в числе, стоящих на нечётных позициях.
+// Метод вывода суммы чисел в числе, стоящих на нечётных позициях, т.е. индекс [1], [3] и т.д.
 int SumNumbers(int[] array)
 {
     int SumNum = 0;
-    for (int i = 0; i < array.Length; i+= 2)
+    for (int i = 1; i < array.Length; i+= 2)
     {
         SumNum+= array[i];
             
     }
-    Console.WriteLine($"сумма нечётных чисел в массиве -> {SumNum} ");
+    Console.WriteLine($"сумма нечётных позиций в массиве -> {SumNum} ");
     return SumNum;
 }
 
 Console.Clear();
-int[] array = GetArray(4, 1, 20);
+int[] array = GetArray(4, -10, 10);
 Print(array);
 Console.WriteLine();
 int SumNumber = SumNumbers(array);

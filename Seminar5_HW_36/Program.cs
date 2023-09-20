@@ -41,7 +41,6 @@ int SumNumbers(int[] array)
     return SumNum;
 }
 
-Console.Clear();
 int[] array = GetArray(4, -10, 10);
 Print(array);
 Console.WriteLine();
